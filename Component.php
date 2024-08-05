@@ -1,8 +1,9 @@
 <?php
 namespace cleantalk\antispam;
 
-use Cleantalk;
-use CleantalkRequest;
+use Cleantalk\Cleantalk;
+use Cleantalk\CleantalkRequest;
+use Cleantalk\CleantalkResponse;
 use InvalidArgumentException;
 use Yii;
 use yii\base\Component as BaseComponent;
@@ -27,7 +28,7 @@ class Component extends BaseComponent
     public $apiKey;
 
     /** @var string API URL */
-    public $apiUrl = 'http://moderate.cleantalk.ru';
+    public $apiUrl = 'http://moderate.cleantalk.org';
 
     /**
      * @deprecated Use setting in https://cleantalk.org/my/service?action=edit
@@ -134,7 +135,7 @@ class Component extends BaseComponent
 
     /**
      * Create request for CleanTalk API.
-     * @return \CleantalkRequest
+     * @return CleantalkRequest
      */
     protected function createRequest()
     {
@@ -155,9 +156,9 @@ class Component extends BaseComponent
     }
 
     /**
-     * @param \CleantalkRequest $request
+     * @param CleantalkRequest $request
      * @param string $method
-     * @return \CleantalkResponse CleanTalk API call result
+     * @return CleantalkResponse CleanTalk API call result
      * @throws InvalidArgumentException
      */
     protected function sendRequest($request, $method)
