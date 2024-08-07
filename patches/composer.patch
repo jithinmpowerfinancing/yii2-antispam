@@ -1,4 +1,4 @@
---- vendor/cleantalk/yii2-antispam/composer.json	2015-06-30 23:24:52
+--- vendor/cleantalk/yii2-antispam/composer.json	2024-08-07 23:12:02
 +++ orignial_patch/composer.json	2024-08-07 22:49:57
 @@ -8,7 +8,8 @@
    ],
@@ -22,4 +22,6 @@
 +          }
 +      }
    }
- }
+-}
+\ No newline at end of file
++}

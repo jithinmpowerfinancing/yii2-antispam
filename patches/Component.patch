@@ -1,38 +1,12 @@
---- vendor/cleantalk/yii2-antispam/Component.php	2024-08-07 22:32:58
-+++ orignial_patch/Component.php	2024-08-07 23:05:17
-@@ -1,9 +1,8 @@
- <?php
- namespace cleantalk\antispam;
+--- vendor/cleantalk/yii2-antispam/Component.php	2024-08-07 23:11:26
++++ orignial_patch/Component.php	2024-08-07 23:10:47
+@@ -27,7 +27,7 @@
+     public $apiKey;
  
--use Cleantalk\Cleantalk;
--use Cleantalk\CleantalkRequest;
--use Cleantalk\CleantalkResponse;
-+use Cleantalk;
-+use CleantalkRequest;
- use InvalidArgumentException;
- use Yii;
- use yii\base\Component as BaseComponent;
-\ No newline at end of file
-@@ -135,7 +134,7 @@
+     /** @var string API URL */
+-    public $apiUrl = 'http://moderate.cleantalk.ru';
++    public $apiUrl = 'http://moderate.cleantalk.org';
  
      /**
-      * Create request for CleanTalk API.
--     * @return CleantalkRequest
-+     * @return \CleantalkRequest
-      */
-     protected function createRequest()
-     {
-\ No newline at end of file
-@@ -156,9 +155,9 @@
-     }
- 
-     /**
--     * @param CleantalkRequest $request
-+     * @param \CleantalkRequest $request
-      * @param string $method
--     * @return CleantalkResponse CleanTalk API call result
-+     * @return \CleantalkResponse CleanTalk API call result
-      * @throws InvalidArgumentException
-      */
-     protected function sendRequest($request, $method)
+      * @deprecated Use setting in https://cleantalk.org/my/service?action=edit
 \ No newline at end of file
