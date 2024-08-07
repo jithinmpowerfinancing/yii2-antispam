@@ -1,5 +1,5 @@
 --- vendor/cleantalk/yii2-antispam/composer.json	2024-08-07 23:12:02
-+++ orignial_patch/composer.json	2024-08-07 23:33:16
++++ orignial_patch/composer.json	2024-08-07 23:45:03
 @@ -8,7 +8,8 @@
    ],
    "type": "yii2-extension",
@@ -10,6 +10,7 @@
    },
    "require-dev": {
      "yiisoft/yii2": "~2.0.0",
+\ No newline at end of file
 @@ -23,5 +24,12 @@
    ],
    "autoload": {
@@ -22,6 +23,5 @@
 +          }
 +      }
    }
--}
+ }
 \ No newline at end of file
-+}
