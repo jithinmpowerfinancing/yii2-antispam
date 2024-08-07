@@ -1,11 +1,11 @@
 --- vendor/cleantalk/yii2-antispam/composer.json	2024-08-07 23:12:02
-+++ orignial_patch/composer.json	2024-08-07 23:45:03
++++ orignial_patch/composer.json	2024-08-08 00:00:51
 @@ -8,7 +8,8 @@
    ],
    "type": "yii2-extension",
    "require": {
 -    "cleantalk/php-antispam": "~2.0.0"
-+    "cleantalk/php-antispam": "~2.0.0",
++    "cleantalk/php-antispam": "2.0.0",
 +    "cweagans/composer-patches": "^1.7"
    },
    "require-dev": {
